@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرف الدين حسن هادي</title>
+    <style>
+        :root {
+            --main-color: #3498db;
+            --bg-light: #f2f2f2;
+            --bg-dark: #1e272e;
+            --text-light: #ffffff;
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            transition: all 0.5s ease;
+        }
+
+        .dark-mode {
+            background: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        header {
+            background: linear-gradient(to left, #2980b9, #6dd5fa);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #2c3e50;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #1abc9c;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .dark-mode section {
+            background: #2f3640;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--main-color);
+            margin-bottom: 15px;
+        }
+
+        .button {
+            background: var(--main-color);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background 0.3s;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .toggle-mode {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>شرف الدين حسن هادي</h1>
+    <p>مطور - مبرمج - باحث</p>
+</header>
+
+<nav>
+    <a href="#about">من أنا</a>
+    <a href="#skills">المهارات</a>
+    <a href="#contact">تواصل</a>
+</nav>
+
+<section id="about" class="profile">
+    <img src="https://via.placeholder.com/180" alt="صورة شخصية">
+    <h2>من أنا؟</h2>
+    <p>
+        أنا شرف الدين حسن هادي، أعمل في مجال البرمجة والتطوير، أُتقن عدة لغات وأحب بناء حلول تقنية آمنة وعصرية تخدم المستخدم.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>المهارات</h2>
+    <ul>
+        <li>Python / JavaScript / HTML / CSS</li>
+        <li>تصميم واجهات عصرية (UI/UX)</li>
+        <li>برمجة قواعد البيانات وWeb APIs</li>
+        <li>أمن المعلومات والحماية من الاختراق</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>تواصل معي</h2>
+    <p>راسلني عبر البريد أو الواتساب:</p>
+    <a href="mailto:example@example.com"><button class="button">📧 بريد إلكتروني</button></a>
+    <a href="https://wa.me/967777777777"><button class="button">💬 واتساب</button></a>
+</section>
+
+<footer>
+    &copy; 2025 جميع الحقوق محفوظة - شرف الدين حسن هادي
+</footer>
+
+<div class="toggle-mode">
+    <button onclick="toggleMode()" class="button">🌓 الوضع الليلي</button>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>
